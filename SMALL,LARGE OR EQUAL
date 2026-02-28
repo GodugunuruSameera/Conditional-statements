@@ -1,0 +1,56 @@
+SMALL,LARGE OR EQUAL
+Write a program which prints small/large/equal relation of given two integers a and b.
+
+Input
+Two integers a and b separated by a single space are given in a line.
+
+Output
+For given two integers a and b, print
+
+a < b
+if a is less than b,
+
+a > b
+if a is greater than b, and
+
+a == b
+if a equals to b.
+
+Constraints
+-1000 ≤ a, b ≤ 1000
+Inputcopy	Outputcopy
+1 2
+a < b
+Inputcopy	Outputcopy
+4 3
+a > b
+Inputcopy	Outputcopy
+5 5
+a == b
+CODE:
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+
+        int res = Integer.compare(a, b);
+
+        switch(res) {
+            case -1:
+                System.out.println("a < b");
+                break;
+
+            case 1:
+                System.out.println("a > b");
+                break;
+
+            default:
+                System.out.println("a == b");
+        }
+    }
+}
+
