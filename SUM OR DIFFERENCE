@@ -1,0 +1,83 @@
+Write a program to take two numbers as input and print their difference if the first number is greater than the second number 
+o
+t
+h
+e
+r
+w
+i
+s
+e
+otherwise print their sum.
+
+Input Format
+First line will contain two numbers, 
+(
+N
+1
+)
+(N1) and 
+(
+N
+2
+)
+,
+(N2), separated by a space.
+
+Output Format
+Output a single line containing the difference of 2 numbers 
+(
+N
+1
+−
+N
+2
+)
+(N1−N2) if the first number is greater than the second number otherwise output their sum 
+(
+N
+1
++
+N
+2
+)
+(N1+N2).
+
+Constraints
+−
+1000
+≤
+N
+1
+≤
+1000
+−1000≤N1≤1000
+−
+1000
+≤
+N
+2
+≤
+1000
+−1000≤N2≤1000
+Sample 1
+Inputcopy	Outputcopy
+82 28
+54
+CODE:
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int N1 = sc.nextInt();
+        int N2 = sc.nextInt();
+
+        if (N1 > N2)
+            System.out.println(N1 - N2);
+        else
+            System.out.println(N1 + N2);
+    }
+}
