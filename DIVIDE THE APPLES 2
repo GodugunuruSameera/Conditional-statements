@@ -1,0 +1,42 @@
+n schoolchildren divide 
+k
+k apples evenly, the residue remains in the basket. How many apples remain in the basket?
+
+Input
+Two positive integers 
+n
+n and 
+k
+k not greater than 
+1500
+1500 — rarely are there more pupils in school, and where to find such a basket?
+
+Output
+Print the number of apples in the basket.
+
+Examples
+Inputcopy	Outputcopy
+3
+14
+2
+
+Inputcopy	Outputcopy
+10
+100
+0
+CODE:
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        int n = sc.nextInt();   // children
+        int k = sc.nextInt();   // apples
+
+        int remainder = k % n;
+
+        System.out.println(remainder);
+    }
+}
