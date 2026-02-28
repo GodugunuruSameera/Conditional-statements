@@ -1,0 +1,37 @@
+Write a program which prints 1000 "Hello World".
+
+Input
+There is no input for this problem.
+
+Output
+The output consists of 1000 lines. Print "Hello World" in each line.
+
+Inputcopy	Outputcopy
+No input
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+.
+.
+.
+.
+.
+.
+Hello World
+CODE:
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        String[] arr = new String[1000];
+        Arrays.fill(arr, "Hello World");
+
+        for(String s : arr) {
+            System.out.println(s);
+        }
+    }
+}
